@@ -1,0 +1,172 @@
+/* Estilos de Café & Cartón — colores tomados del logo */
+:root {
+  --turquesa: #00CFD8;
+  --turquesa-claro: #D6F7F8;
+  --naranja: #FF6918;
+  --cafe: #785800;
+  --negro: #111111;
+  --crema: #FFF6E9;
+  --carton: #F3E3C7;
+  --gris: #5B5348;
+  --borde: 2.5px solid var(--negro);
+  --sombra: 4px 4px 0 var(--negro);
+  --radio: 16px;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  color: var(--negro);
+  background: var(--crema);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+main { flex: 1; }
+h1, h2, .titulo { font-family: "Baloo 2", sans-serif; font-weight: 800; line-height: 1.1; }
+a { color: var(--negro); }
+
+/* Encabezado */
+.site-header { padding: 18px 0 6px; text-align: center; }
+.site-header .logo { width: 240px; max-width: 70%; height: auto; }
+.site-header.compact { text-align: left; padding: 12px 0; border-bottom: var(--borde); background: #fff; }
+.site-header.compact .container { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.site-header.compact .logo { width: 130px; max-width: none; }
+
+.hero { text-align: center; padding: 4px 0 18px; }
+.hero h1 { font-size: 2rem; margin: 0; }
+.hero h1 .amp { color: var(--naranja); }
+.hero p { margin: 2px 0 0; color: var(--gris); font-weight: 600; }
+
+/* Botón con contorno (volver, etc.) */
+.pill {
+  display: inline-flex; align-items: center; gap: 6px;
+  background: #fff; border: var(--borde); border-radius: 999px;
+  padding: 5px 14px; font-weight: 700; text-decoration: none; color: var(--negro);
+  box-shadow: 2px 2px 0 var(--negro); white-space: nowrap;
+}
+.pill:hover { background: var(--turquesa); color: var(--negro); }
+
+/* Filtros */
+.filters {
+  background: #fff;
+  border: var(--borde);
+  border-radius: var(--radio);
+  box-shadow: var(--sombra);
+  padding: 16px;
+}
+.filters .search-box { position: relative; margin-bottom: 6px; }
+.filters .search-box i { position: absolute; left: 15px; top: 50%; transform: translateY(-50%); }
+.filters .search-box input {
+  padding: 9px 14px 9px 42px; border: var(--borde); border-radius: 999px;
+  font-weight: 600; color: var(--negro);
+}
+.filters .search-box input:focus { box-shadow: 0 0 0 3px var(--turquesa); border-color: var(--negro); }
+.filter-row { display: flex; align-items: center; gap: 6px 10px; margin-top: 12px; flex-wrap: wrap; }
+.filter-row .label { font-family: "Baloo 2", sans-serif; font-weight: 700; font-size: 1rem; min-width: 190px; }
+.chip-group { display: flex; gap: 6px; flex-wrap: wrap; }
+.chip {
+  border: 2px solid var(--negro);
+  background: #fff;
+  color: var(--negro);
+  border-radius: 999px;
+  padding: 4px 14px;
+  font-weight: 700;
+  font-size: .92rem;
+  line-height: 1.3;
+  transition: transform .1s;
+}
+.chip:hover { background: var(--turquesa-claro); }
+.chip.active { background: var(--turquesa); box-shadow: 2px 2px 0 var(--negro); transform: translate(-1px, -1px); }
+
+.results-bar {
+  display: flex; justify-content: space-between; align-items: center;
+  margin: 22px 2px 12px; font-weight: 700;
+}
+.link-btn { background: none; border: 0; padding: 0; font-weight: 700; color: var(--negro); text-decoration: underline; text-decoration-color: var(--naranja); text-decoration-thickness: 2px; }
+
+/* Tarjetas de juegos */
+.game-card {
+  display: flex; flex-direction: column;
+  height: 100%;
+  background: #fff;
+  border: var(--borde);
+  border-radius: var(--radio);
+  overflow: hidden;
+  box-shadow: var(--sombra);
+  color: var(--negro);
+  text-decoration: none;
+  transition: transform .15s, box-shadow .15s;
+}
+.game-card:hover { transform: translate(-2px, -2px); box-shadow: 7px 7px 0 var(--negro); color: var(--negro); }
+.game-card:active { transform: translate(2px, 2px); box-shadow: 1px 1px 0 var(--negro); }
+.game-card-img { position: relative; flex: none; aspect-ratio: 4 / 3; overflow: hidden; background: var(--carton); border-bottom: var(--borde); }
+.game-card-img img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; display: block; }
+.game-card-body { padding: 12px 16px 16px; display: flex; flex-direction: column; flex: 1; }
+.game-card h2 { font-size: 1.45rem; margin: 0 0 2px; }
+.tagline { color: var(--gris); font-weight: 600; margin-bottom: 10px; }
+.game-card .tags { margin-top: auto; }
+
+.stats { list-style: none; padding: 0; margin: 0 0 12px; display: flex; flex-wrap: wrap; gap: 6px 16px; font-size: .92rem; font-weight: 700; }
+.stats li { display: flex; align-items: center; gap: 6px; }
+.stats i { color: var(--naranja); }
+
+.difficulty { display: inline-flex; gap: 3px; }
+.difficulty .dot { width: 11px; height: 11px; border-radius: 50%; border: 1.5px solid var(--negro); background: #fff; }
+.difficulty .dot.on { background: var(--naranja); }
+
+.tags { display: flex; flex-wrap: wrap; gap: 6px; }
+.tag { background: var(--turquesa-claro); border: 1.5px solid var(--negro); border-radius: 6px; padding: 1px 8px; font-size: .8rem; font-weight: 700; }
+
+/* Página del juego */
+.main-photo { border: var(--borde); border-radius: var(--radio); overflow: hidden; background: var(--carton); aspect-ratio: 4 / 3; box-shadow: var(--sombra); }
+.main-photo img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.photo-credit { font-size: .75rem; color: var(--gris); text-align: right; margin: 8px 2px 0; min-height: 1em; }
+.photo-credit a { color: var(--gris); }
+.thumbs { display: flex; gap: 10px; margin-top: 8px; }
+.thumb {
+  flex: 0 0 22%; aspect-ratio: 4 / 3; padding: 0; border: 2px solid var(--negro);
+  border-radius: 10px; overflow: hidden; background: var(--carton); opacity: .55; transition: opacity .15s;
+}
+.thumb:hover { opacity: .85; }
+.thumb.active { opacity: 1; box-shadow: 3px 3px 0 var(--naranja); }
+.thumb img { width: 100%; height: 100%; object-fit: cover; display: block; }
+
+#game { padding-top: 20px; }
+#game h1 { font-size: 2.3rem; margin-bottom: 2px; }
+#game h2 { font-size: 1.5rem; margin-top: 24px; }
+.aka { font-size: .85rem; font-weight: 700; color: var(--gris); margin: 0 0 4px; }
+.stat-boxes { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin: 16px 0; }
+.stat-boxes > div {
+  background: #fff; border: 2px solid var(--negro); border-radius: 12px; padding: 10px 6px; text-align: center;
+  font-size: .8rem; font-weight: 600; color: var(--gris);
+}
+.stat-boxes i, .stat-boxes .difficulty { color: var(--naranja); display: flex; justify-content: center; margin-bottom: 4px; font-size: 1.1rem; }
+.stat-boxes strong { display: block; color: var(--negro); font-family: "Baloo 2", sans-serif; font-size: 1.3rem; line-height: 1.2; }
+
+.how-to { list-style: none; padding: 0; counter-reset: paso; }
+.how-to li { counter-increment: paso; position: relative; padding-left: 42px; margin-bottom: 12px; min-height: 30px; }
+.how-to li::before {
+  content: counter(paso);
+  position: absolute; left: 0; top: -2px;
+  width: 30px; height: 30px; border-radius: 50%;
+  background: var(--naranja); border: 2px solid var(--negro);
+  font-family: "Baloo 2", sans-serif; font-weight: 800; line-height: 26px; text-align: center;
+}
+.ask {
+  background: var(--turquesa); border: var(--borde); border-radius: 12px; box-shadow: var(--sombra);
+  padding: 12px 16px; margin-top: 22px; font-weight: 700;
+}
+.ask i { margin-right: 6px; }
+
+/* Pie de página */
+.site-footer { background: var(--negro); color: #fff; text-align: center; padding: 28px 0 24px; margin-top: 40px; }
+.site-footer img { width: 130px; height: auto; display: block; margin: 0 auto 10px; }
+.site-footer p { margin: 0; font-weight: 600; }
+.site-footer .amp { color: var(--naranja); }
+
+@media (max-width: 575px) {
+  .filter-row .label { min-width: 100%; }
+  .stat-boxes { grid-template-columns: repeat(2, 1fr); }
+  .hero h1 { font-size: 1.7rem; }
+  #game h1 { font-size: 2rem; }
+}

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Café &amp; Cartón · Menú de juegos</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#FFF6E9">
+
+    <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+    <link rel="apple-touch-icon" href="assets/img/apple-icon.png">
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@700;800&family=Nunito:wght@400;600;700&display=swap">
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+    <link rel="stylesheet" href="assets/css/custom.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container">
+            <a href="index.html"><img class="logo" src="assets/img/logo.png" alt="Café &amp; Cartón"></a>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Menú de juegos</h1>
+            <p>Elige un juego y te lo llevamos a tu mesa.</p>
+        </div>
+    </section>
+
+    <main class="container pb-4">
+        <div class="filters">
+            <div class="search-box">
+                <i class="fa fa-search"></i>
+                <input type="search" id="search" class="form-control" placeholder="Busca un juego..." autocomplete="off">
+            </div>
+
+            <div class="filter-row">
+                <span class="label">¿Cuántos son?</span>
+                <div class="chip-group" data-filter="players">
+                    <button type="button" class="chip" data-value="2" aria-pressed="false">2</button>
+                    <button type="button" class="chip" data-value="3" aria-pressed="false">3</button>
+                    <button type="button" class="chip" data-value="4" aria-pressed="false">4</button>
+                    <button type="button" class="chip" data-value="5" aria-pressed="false">5</button>
+                    <button type="button" class="chip" data-value="6" aria-pressed="false">6+</button>
+                </div>
+            </div>
+
+            <div class="filter-row">
+                <span class="label">¿Cuánto tiempo tienen?</span>
+                <div class="chip-group" data-filter="time">
+                    <button type="button" class="chip" data-value="20" aria-pressed="false">~20 min</button>
+                    <button type="button" class="chip" data-value="30" aria-pressed="false">~30 min</button>
+                    <button type="button" class="chip" data-value="60" aria-pressed="false">Hasta 1 h</button>
+                </div>
+            </div>
+
+            <div class="filter-row">
+                <span class="label">Dificultad</span>
+                <div class="chip-group" data-filter="difficulty">
+                    <button type="button" class="chip" data-value="1" aria-pressed="false">Ligero</button>
+                    <button type="button" class="chip" data-value="2" aria-pressed="false">Medio</button>
+                    <button type="button" class="chip" data-value="3" aria-pressed="false">Complejo</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="results-bar">
+            <span id="game-count"></span>
+            <button type="button" id="clear-filters" class="link-btn">Quitar filtros</button>
+        </div>
+
+        <div id="game-grid" class="row g-3"></div>
+
+        <p id="no-results" class="text-center text-muted py-5" hidden>
+            Ningún juego coincide con esos filtros. Prueba quitando alguno, ¡o pídenos una recomendación!
+        </p>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <img src="assets/img/logo-blanco.png" alt="Café & Cartón">
+            <p>¿No te decides? Pregúntanos y te recomendamos algo para tu grupo.</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/games.js"></script>
+    <script src="assets/js/common.js"></script>
+    <script src="assets/js/menu.js"></script>
+</body>
+
+</html>
