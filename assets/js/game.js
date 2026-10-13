@@ -43,6 +43,9 @@
     "<h1>" + escapeHtml(game.name) + "</h1>" +
     (game.aka ? '<p class="aka">También conocido como ' + escapeHtml(game.aka) + "</p>" : "") +
     '<p class="tagline">' + escapeHtml(game.tagline) + "</p>" +
+    (game.requiresEnglish
+      ? '<p class="lang-note"><i class="fa fa-language"></i> <strong>Requiere inglés:</strong> las cartas tienen texto en inglés, así que para jugarlo es necesario saber leer inglés.</p>'
+      : "") +
     '<div class="stat-boxes">' +
     '<div><i class="fa fa-users"></i><strong>' + rangeText(game.players) + "</strong>jugadores</div>" +
     '<div><i class="fa fa-clock"></i><strong>' + rangeText(game.time) + "</strong>minutos</div>" +

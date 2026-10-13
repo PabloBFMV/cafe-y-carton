@@ -13,6 +13,7 @@
     tags        algunas palabras que describen el juego
     description un párrafo corto
     howToPlay   3 a 5 puntos muy breves para que la gente entienda la idea
+    requiresEnglish  (opcional) true si hace falta saber inglés para jugar; muestra un aviso
     images      rutas de las fotos; pon las fotos en assets/img/games/<id>/
                 (la primera se usa en la tarjeta del menú). Si falta una
                 foto, se muestra una imagen provisional.
@@ -197,6 +198,7 @@ window.GAMES = [
     time: { min: 30, max: 30 },
     age: 10,
     difficulty: 2,
+    requiresEnglish: true,
     tags: ["Cartas", "Bazas", "Cuento de hadas"],
     description:
       "Un duelo de cartas en un bosque de cuento, con zorros, brujas, cisnes y monarcas. Cada mano gana quien juega la carta más fuerte, pero aquí no gana quien se lleva más manos: si te pones codicioso y ganas demasiadas, caes como el villano de los cuentos. Las cartas impares tienen poderes especiales que cambian todo. Rápido, ingenioso e ideal para parejas.",
@@ -1078,6 +1080,7 @@ window.GAMES = [
     time: { min: 30, max: 60 },
     age: 8,
     difficulty: 1,
+    requiresEnglish: true,
     tags: ["Cartas", "Humor", "Ataque directo"],
     description:
       "A veces la vida se siente como ser un dinosaurio esquivando meteoritos. Aquí tratas de sobrevivir a todo tipo de desastres: caer en lava, que te coma una ballena prehistórica… o que tu cita dino te deje en visto. Cada ronda sale un desastre natural, depredador o emocional, y todos juegan una carta para escapar. De los creadores de Unstable Unicorns: humor absurdo y mucha risa.",

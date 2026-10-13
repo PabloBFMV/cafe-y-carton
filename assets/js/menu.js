@@ -31,7 +31,9 @@
     return (
       '<div class="col-12 col-sm-6 col-lg-4">' +
       '<a class="game-card" href="game.html?id=' + encodeURIComponent(game.id) + '">' +
-      '<div class="game-card-img">' + imageTag(photoSrc(game.images[0]), game, "") + "</div>" +
+      '<div class="game-card-img">' + imageTag(photoSrc(game.images[0]), game, "") +
+      (game.requiresEnglish ? '<span class="lang-badge"><i class="fa fa-language"></i> Requiere inglés</span>' : "") +
+      "</div>" +
       '<div class="game-card-body">' +
       "<h2>" + escapeHtml(game.name) + "</h2>" +
       '<p class="tagline">' + escapeHtml(game.tagline) + "</p>" +
