@@ -95,7 +95,7 @@ window.GAMES = [
     players: { min: 2, max: 5 },
     time: { min: 30, max: 45 },
     age: 8,
-    difficulty: 2,
+    difficulty: 3,
     tags: ["Construcción de motor", "Intercambio", "Colecciones"],
     description:
       "Son comerciantes en un mundo de fantasía que juntan y mejoran cristales mágicos para construir gólems. En cada turno agregas una carta a tu mano o juegas una para convertir cristales en otros mejores. Con el tiempo tus cartas se combinan como una pequeña máquina. Fácil de aprender pero premia la planeación, y se ve increíble en la mesa.",
@@ -196,7 +196,7 @@ window.GAMES = [
     players: { min: 2, max: 2 },
     time: { min: 30, max: 30 },
     age: 10,
-    difficulty: 1,
+    difficulty: 2,
     tags: ["Cartas", "Bazas", "Cuento de hadas"],
     description:
       "Un duelo de cartas en un bosque de cuento, con zorros, brujas, cisnes y monarcas. Cada mano gana quien juega la carta más fuerte, pero aquí no gana quien se lleva más manos: si te pones codicioso y ganas demasiadas, caes como el villano de los cuentos. Las cartas impares tienen poderes especiales que cambian todo. Rápido, ingenioso e ideal para parejas.",
@@ -443,7 +443,7 @@ window.GAMES = [
     players: { min: 2, max: 5 },
     time: { min: 30, max: 60 },
     age: 8,
-    difficulty: 2,
+    difficulty: 3,
     tags: ["Trenes", "Rutas", "Familiar"],
     description:
       "Un viaje en tren por la Europa de principios del siglo XX, de Edimburgo a Constantinopla y de Lisboa a Moscú. Juntas cartas de vagones de colores para reclamar rutas entre ciudades y cumplir tus boletos de destino secretos. Se aprende en 5 minutos, pero hay que planear bien y cuidar que nadie te bloquee el camino. Un clásico moderno que gusta a familias y a jugadores con experiencia.",
@@ -513,7 +513,7 @@ window.GAMES = [
     players: { min: 2, max: 4 },
     time: { min: 15, max: 20 },
     age: 8,
-    difficulty: 1,
+    difficulty: 2,
     tags: ["Cartas", "Colecciones", "Relajado"],
     description:
       "Un juego tranquilo y precioso sobre jardinería: cada quien colecciona hierbas como menta, salvia, eneldo o perejil y las va plantando en sus macetas. Cada turno decides qué hierba guardas para ti y cuál compartes en el jardín común… sabiendo que los demás también pueden usarla. Las ilustraciones en acuarela son una belleza. Ideal con un café en la mano.",
@@ -548,7 +548,7 @@ window.GAMES = [
     players: { min: 2, max: 5 },
     time: { min: 15, max: 15 },
     age: 8,
-    difficulty: 1,
+    difficulty: 2,
     tags: ["Dinosaurios", "Draft", "Familiar"],
     description:
       "Cada jugador construye su propio parque de dinosaurios para atraer a la mayor cantidad de visitantes. Tomas un puñado de dinosaurios de madera, te quedas con uno, lo pones en tu parque y le pasas el resto a tu vecino. Cada corral tiene sus propias reglas y un dado cambia en cada turno dónde pueden ir los dinosaurios. Rápido, adorable y fácil de enseñar, incluso a niños.",
@@ -584,7 +584,7 @@ window.GAMES = [
     players: { min: 2, max: 2 },
     time: { min: 30, max: 30 },
     age: 10,
-    difficulty: 1,
+    difficulty: 2,
     tags: ["Cartas", "Riesgo", "Duelo"],
     description:
       "Dos exploradores compiten por organizar las expediciones más rentables a ciudades perdidas: el desierto, la selva, los volcanes, el fondo del mar, el Himalaya… Cada expedición que empiezas te cuesta puntos, así que la pregunta siempre es: ¿me arriesgo a abrir otra o me concentro en las que ya tengo? Reglas sencillísimas y decisiones muy tensas. Un clásico para parejas.",
@@ -619,7 +619,7 @@ window.GAMES = [
     players: { min: 2, max: 4 },
     time: { min: 30, max: 45 },
     age: 8,
-    difficulty: 1,
+    difficulty: 3,
     tags: ["Patrones", "Estrategia", "Familiar"],
     description:
       "Eres un artista que debe decorar las paredes del Palacio Real de Évora con azulejos portugueses. Los azulejos son piezas pesaditas de colores que dan gusto agarrar, y el tablero termina como un mosaico precioso. Las reglas se explican en minutos, pero cada turno hay que pensar bien: tomar justo lo que necesitas sin quedarte con piezas de más, que restan puntos.",
@@ -654,7 +654,7 @@ window.GAMES = [
     players: { min: 2, max: 4 },
     time: { min: 30, max: 60 },
     age: 10,
-    difficulty: 1,
+    difficulty: 2,
     tags: ["Losetas", "Construcción", "Familiar"],
     description:
       "Eres un arquitecto que compite por diseñar la mejor ciudad flotante. Colocas losetas de nubes, levantas edificios de tres alturas y los unes con pasarelas: entre más larga la pasarela, más votos del consejo de la ciudad ganas. Al final, cada jugador tiene una mini ciudad en 3D sobre la mesa. Fácil de aprender y muy vistoso.",
@@ -794,7 +794,7 @@ window.GAMES = [
     players: { min: 2, max: 4 },
     time: { min: 15, max: 25 },
     age: 8,
-    difficulty: 1,
+    difficulty: 2,
     tags: ["Losetas", "Familiar", "Rápido"],
     description:
       "Eres un rey o reina que expande su reino con fichas de dominó de bosques, lagos, trigales, praderas, pantanos y minas. Conecta terrenos iguales y busca las coronas, que multiplican el valor de cada territorio. El detalle está en cómo eliges: si tomas la mejor ficha, jugarás al último en la siguiente ronda. Ganó el Spiel des Jahres y se aprende en cinco minutos.",
@@ -936,7 +936,7 @@ window.GAMES = [
     players: { min: 2, max: 4 },
     time: { min: 20, max: 30 },
     age: 10,
-    difficulty: 1,
+    difficulty: 3,
     tags: ["Dados", "Combos", "Fantasía"],
     description:
       "Los dragones han vuelto y los enanos deben regresar a sus antiguas minas. Se vacía una bolsa de dados sobre una montaña inclinada y, por turnos, cada quien va sacando dados para su tesoro: túneles, tesoros, herramientas, magia… y peligros. Arriesga para armar grandes combos y suma más puntos que nadie en tres rondas. Los dados de colores en la montaña se ven increíbles.",
@@ -1042,7 +1042,7 @@ window.GAMES = [
     players: { min: 2, max: 4 },
     time: { min: 30, max: 45 },
     age: 10,
-    difficulty: 1,
+    difficulty: 3,
     tags: ["Cartas", "Recursos", "Comercio"],
     description:
       "La versión rápida en cartas del famoso Catan. Como en el juego de mesa, juntas recursos para construir poblados, caminos, ciudades, mejoras y caballeros que te dan puntos o habilidades especiales. Pero aquí no hay dados: los recursos dependen de lo que construyes, así que hay menos suerte. Y cuidado: el camino más largo y los caballeros pueden cambiar de dueño. Gana el primero en llegar a 10 puntos.",
