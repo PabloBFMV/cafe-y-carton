@@ -370,19 +370,19 @@ window.GAMES = [
   {
     id: "downforce",
     name: "Downforce",
-    tagline: "Compra autos de carreras, apuesta y cruza la meta primero.",
+    tagline: "Una carrera de autos con cartas: tu auto debe cruzar la meta primero.",
     players: { min: 2, max: 6 },
     time: { min: 20, max: 40 },
     age: 10,
     difficulty: 1,
-    tags: ["Carreras", "Subastas", "Apuestas"],
+    tags: ["Carreras", "Cartas", "Familiar"],
     description:
-      "Una carrera de autos donde primero se subastan los coches y luego se corre con cartas. El truco: casi todas las cartas también mueven los autos de los demás, así que hay que elegir muy bien el momento de jugar cada una. Durante la carrera haces apuestas secretas sobre quién va a ganar. Al final gana quien junte más dinero entre premios, apuestas y lo que le quedó. Rápido, tenso y muy fácil de enseñar.",
+      "Una carrera de autos que se corre con cartas. El truco: casi todas las cartas también mueven los autos de los demás, así que hay que elegir muy bien el momento de jugar cada una para no ayudar a tus rivales. Aquí jugamos la versión para principiantes del reglamento: sin subastas ni apuestas, solo la carrera. Rápido, tenso y muy fácil de enseñar.",
     howToPlay: [
-      "Al inicio se subastan los 6 autos: cada jugador puja con sus cartas para quedarse con uno o más.",
-      "En tu turno juega una carta: mueve los autos en el orden que indica, incluidos los de tus rivales.",
-      "En ciertos puntos de la pista todos hacen una apuesta secreta sobre qué auto ganará.",
-      "Al terminar la carrera se cobran premios y apuestas (menos lo que pagaste en la subasta). Gana quien tenga más dinero."
+      "Se reparten al azar las cartas de los autos para que cada jugador controle el mismo número de autos. Los que sobren corren sin dueño.",
+      "Cada jugador tiene 3 cartas en la mano; las demás forman un mazo común.",
+      "En tu turno juega una carta: mueve los autos en el orden que indica, incluidos los de tus rivales. Luego roba una carta nueva.",
+      "Gana el jugador cuyo auto cruce la meta primero."
     ],
     images: [
       {
