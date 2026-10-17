@@ -37,7 +37,7 @@ window.RECOMMENDATIONS = [
     label: "Para un reto",
     title: "¿Quieren algo más avanzado? Prueben Century",
     text: "Intercambia cristales y arma tu propio motor de cartas. Para quienes ya jugaron otros juegos y quieren pensar más.",
-    photo: 1
+    photo: 2
   },
   {
     game: "hot-streak",
