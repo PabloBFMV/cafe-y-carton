@@ -58,7 +58,7 @@ window.GAMES = [
     id: "love-letter",
     name: "Love Letter",
     tagline: "Haz llegar tu carta a la princesa con solo 16 cartas.",
-    players: { min: 2, max: 4 },
+    players: { min: 3, max: 4 },
     time: { min: 20, max: 20 },
     age: 10,
     difficulty: 1,
