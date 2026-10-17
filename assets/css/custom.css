@@ -46,6 +46,38 @@ a { color: var(--negro); }
 }
 .pill:hover { background: var(--turquesa); color: var(--negro); }
 
+/* Recomendaciones de la casa */
+.recs { margin-bottom: 28px; }
+.recs-title, .section-title { font-size: 1.6rem; margin: 0; }
+.section-title { margin-bottom: 12px; }
+.recs-sub { color: var(--gris); font-weight: 600; margin: 2px 0 12px; }
+.recs-row {
+  display: grid; grid-auto-flow: column; grid-auto-columns: 78%;
+  gap: 14px; overflow-x: auto; scroll-snap-type: x mandatory;
+  padding: 2px 8px 10px 2px; margin-right: -12px;
+}
+.rec-card {
+  scroll-snap-align: start;
+  display: flex; flex-direction: column;
+  background: #fff; border: var(--borde); border-radius: var(--radio); overflow: hidden;
+  box-shadow: var(--sombra); color: var(--negro); text-decoration: none;
+  transition: transform .15s, box-shadow .15s;
+}
+.rec-card:hover { transform: translate(-2px, -2px); box-shadow: 7px 7px 0 var(--negro); color: var(--negro); }
+.rec-img { position: relative; aspect-ratio: 16 / 10; overflow: hidden; border-bottom: var(--borde); background: var(--carton); flex: none; }
+.rec-img img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.rec-body { padding: 10px 14px 14px; display: flex; flex-direction: column; flex: 1; }
+.rec-label {
+  align-self: flex-start; background: var(--turquesa); border: 2px solid var(--negro); border-radius: 999px;
+  padding: 0 10px; font-size: .75rem; font-weight: 800; text-transform: uppercase; letter-spacing: .03em;
+}
+.rec-card h3 { font-family: "Baloo 2", sans-serif; font-weight: 800; font-size: 1.2rem; line-height: 1.15; margin: 8px 0 4px; }
+.rec-card p { color: var(--gris); font-size: .9rem; margin: 0 0 10px; }
+.rec-more { margin-top: auto; font-weight: 800; font-size: .9rem; }
+.rec-more i { color: var(--naranja); margin-left: 4px; }
+@media (min-width: 768px) { .recs-row { grid-auto-columns: 300px; } }
+@media (min-width: 1200px) { .recs-row { grid-auto-columns: 1fr; grid-auto-flow: row; grid-template-columns: repeat(5, 1fr); overflow: visible; margin-right: 0; } }
+
 /* Filtros */
 .filters {
   background: #fff;

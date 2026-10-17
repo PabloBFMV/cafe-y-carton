@@ -86,5 +86,29 @@
     render();
   });
 
+  // Recomendaciones de la casa: tarjetas tipo blog que llevan a la página del juego.
+  function renderRecs() {
+    var recs = (window.RECOMMENDATIONS || []).filter(function (r) {
+      return games.some(function (g) { return g.id === r.game; });
+    });
+    if (!recs.length) return;
+    document.getElementById("recs-row").innerHTML = recs.map(function (r) {
+      var game = games.filter(function (g) { return g.id === r.game; })[0];
+      var photo = game.images[(r.photo || 1) - 1] || game.images[0];
+      return (
+        '<a class="rec-card" href="game.html?id=' + encodeURIComponent(game.id) + '">' +
+        '<div class="rec-img">' + imageTag(photoSrc(photo), game, "") + "</div>" +
+        '<div class="rec-body">' +
+        '<span class="rec-label">' + escapeHtml(r.label) + "</span>" +
+        "<h3>" + escapeHtml(r.title) + "</h3>" +
+        "<p>" + escapeHtml(r.text) + "</p>" +
+        '<span class="rec-more">Ver el juego <i class="fa fa-arrow-right"></i></span>' +
+        "</div></a>"
+      );
+    }).join("");
+    document.getElementById("recs").hidden = false;
+  }
+
+  renderRecs();
   render();
 })();
