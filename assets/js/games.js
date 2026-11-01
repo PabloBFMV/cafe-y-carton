@@ -1138,5 +1138,148 @@ window.GAMES = [
         link: "https://boardgamegeek.com/image/5334926/love-formula"
       }
     ]
+  },
+  {
+    id: "7-wonders",
+    name: "7 Wonders",
+    tagline: "Construye una civilización de la antigüedad en tres eras.",
+    players: { min: 3, max: 7 },
+    time: { min: 30, max: 30 },
+    age: 10,
+    difficulty: 3,
+    tags: ["Draft", "Civilizaciones", "Grupos grandes"],
+    description:
+      "Cada jugador dirige una gran ciudad de la antigüedad y construye su maravilla: las pirámides, el Coloso de Rodas, los jardines colgantes… Todos juegan sus cartas al mismo tiempo, así que no hay que esperar turnos aunque sean 7. Edificios de recursos, comercio, ciencia, ejército y más: hay muchas formas de ganar. Uno de los juegos con más premios en el mundo.",
+    howToPlay: [
+      "El juego dura 3 eras. En cada era recibes una mano de cartas: eliges una en secreto y pasas el resto a tu vecino.",
+      "Todos revelan al mismo tiempo. Con tu carta puedes construir un edificio (pagando sus recursos), construir una etapa de tu maravilla o descartarla por monedas.",
+      "Si te faltan recursos puedes comprárselos a tus vecinos. Al final de cada era hay guerra: comparas tu fuerza militar con tus dos vecinos.",
+      "Después de la tercera era se suman los puntos de edificios, maravilla, ejército y dinero. Gana quien tenga más."
+    ],
+    images: [
+      {
+        src: "assets/img/games/7-wonders/1.jpg",
+        credit: "W Eric Martin / BoardGameGeek",
+        link: "https://boardgamegeek.com/image/7416519/7-wonders-second-edition"
+      },
+      {
+        src: "assets/img/games/7-wonders/2.jpg",
+        credit: "tonytonyjan / BoardGameGeek",
+        link: "https://boardgamegeek.com/image/9769428/7-wonders-second-edition"
+      },
+      {
+        src: "assets/img/games/7-wonders/3.jpg",
+        credit: "mescola / BoardGameGeek",
+        link: "https://boardgamegeek.com/image/9701856/7-wonders"
+      }
+    ]
+  },
+  {
+    id: "chronicles-of-crime",
+    name: "Chronicles of Crime",
+    tagline: "Resuelvan un asesinato juntos con ayuda de una app.",
+    players: { min: 2, max: 4 },
+    time: { min: 60, max: 90 },
+    age: 12,
+    difficulty: 1,
+    requiresEnglish: true,
+    tags: ["Cooperativo", "Detectives", "App"],
+    description:
+      "Un juego cooperativo de investigación criminal: todos son detectives y trabajan en equipo para atrapar al asesino lo más rápido posible. Se juega con una app gratuita en el celular que escanea los códigos QR de los lugares, personajes y objetos, y según el caso te da pistas, interrogatorios y giros en la historia. Trae un tutorial y varios casos distintos. Ideal si les gustan las series policiacas.",
+    howToPlay: [
+      "Abran la app en un celular y elijan un caso. La app cuenta la historia del crimen.",
+      "Para investigar, visiten lugares e interroguen personajes escaneando sus cartas con el celular.",
+      "Muéstrenles objetos y pistas a los sospechosos para ver cómo reaccionan. Cada acción consume tiempo del reloj.",
+      "Cuando crean tenerlo, respondan las preguntas de la app sobre quién fue y por qué. Entre más rápido y certero, mejor puntuación."
+    ],
+    images: [
+      {
+        src: "assets/img/games/chronicles-of-crime/1.jpg",
+        credit: "Cosmik42 / BoardGameGeek",
+        link: "https://boardgamegeek.com/image/4317519/chronicles-of-crime"
+      },
+      {
+        src: "assets/img/games/chronicles-of-crime/2.jpg",
+        credit: "Melaniebarr / BoardGameGeek",
+        link: "https://boardgamegeek.com/image/9480138/chronicles-of-crime"
+      },
+      {
+        src: "assets/img/games/chronicles-of-crime/3.jpg",
+        credit: "Ertai_PL / BoardGameGeek",
+        link: "https://boardgamegeek.com/image/3861922/chronicles-of-crime"
+      }
+    ]
+  },
+  {
+    id: "potion-explosion",
+    name: "Potion Explosion",
+    tagline: "Toma ingredientes, provoca explosiones y prepara pociones.",
+    players: { min: 2, max: 4 },
+    time: { min: 30, max: 45 },
+    age: 8,
+    difficulty: 3,
+    tags: ["Canicas", "Combos", "Magia"],
+    description:
+      "¡Es el examen final de la clase de pociones! Los ingredientes son canicas de colores en un dispensador: tomas una, las demás ruedan, y si chocan canicas del mismo color… ¡explotan y también te las llevas! Con ellas completas pociones que te dan puntos y poderes mágicos de un solo uso. Muy satisfactorio de jugar y se ve increíble en la mesa.",
+    howToPlay: [
+      "En tu turno toma una canica de ingrediente del dispensador. Las de arriba ruedan para llenar el hueco.",
+      "Si al caer se juntan canicas del mismo color, explotan y te quedas con ellas también. ¡Puedes encadenar varias explosiones!",
+      "Usa tus canicas para completar las pociones que tienes en tu mesa. Cada poción terminada da puntos.",
+      "Puedes beberte una poción para usar su poder mágico. Al final gana el alumno con las pociones más valiosas."
+    ],
+    images: [
+      {
+        src: "assets/img/games/potion-explosion/1.jpg",
+        credit: "earache / BoardGameGeek",
+        link: "https://boardgamegeek.com/image/7298696/potion-explosion"
+      },
+      {
+        src: "assets/img/games/potion-explosion/2.jpg",
+        credit: "De_boardgame_familie / BoardGameGeek",
+        link: "https://boardgamegeek.com/image/9119735/potion-explosion"
+      },
+      {
+        src: "assets/img/games/potion-explosion/3.jpg",
+        credit: "De_boardgame_familie / BoardGameGeek",
+        link: "https://boardgamegeek.com/image/9119733/potion-explosion"
+      }
+    ]
+  },
+  {
+    id: "the-isle-of-cats",
+    name: "The Isle of Cats",
+    aka: "La Isla de los Gatos",
+    tagline: "Rescata gatos y acomódalos en tu barco como un rompecabezas.",
+    players: { min: 2, max: 4 },
+    time: { min: 30, max: 45 },
+    age: 8,
+    difficulty: 2,
+    requiresEnglish: true,
+    tags: ["Rompecabezas", "Gatos", "Familiar"],
+    description:
+      "Una isla llena de gatos antiguos y sabios está en peligro: el malvado Vesh viene en camino y hay que rescatar a todos los que se pueda antes de zarpar. Cada gato es una pieza de rompecabezas de distinta forma y tienes que acomodarlos en tu barco, juntando a los de la misma familia y sin dejar cuartos vacíos. Aquí jugamos el modo familiar del reglamento: más sencillo y rápido, pero igual de bonito.",
+    howToPlay: [
+      "Se juegan 5 días (rondas). Al inicio de cada día se sacan de la bolsa 4 gatos por jugador y se colocan alrededor de la isla.",
+      "Por turnos, cada jugador toma un gato y lo coloca en su barco: puedes girarlo o voltearlo, pero debe tocar otra pieza que ya esté en tu barco. También puedes pasar.",
+      "Si pones un gato sobre un mapa del tesoro de su mismo color, tomas un tesoro de regalo para tu barco.",
+      "Al final ganas puntos por familias de 3 o más gatos del mismo color que se toquen y por tus cartas de objetivo secretas; restan las ratas visibles (-1) y los cuartos sin llenar (-5)."
+    ],
+    images: [
+      {
+        src: "assets/img/games/the-isle-of-cats/1.jpg",
+        credit: "TheCityofKings / BoardGameGeek",
+        link: "https://boardgamegeek.com/image/4781085/the-isle-of-cats"
+      },
+      {
+        src: "assets/img/games/the-isle-of-cats/2.jpg",
+        credit: "Rufdungun / BoardGameGeek",
+        link: "https://boardgamegeek.com/image/9768065/the-isle-of-cats"
+      },
+      {
+        src: "assets/img/games/the-isle-of-cats/3.jpg",
+        credit: "DarkMasterZz / BoardGameGeek",
+        link: "https://boardgamegeek.com/image/9458716/the-isle-of-cats"
+      }
+    ]
   }
 ];
