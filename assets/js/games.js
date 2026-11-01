@@ -1107,5 +1107,36 @@ window.GAMES = [
         link: "https://boardgamegeek.com/image/7395946/happy-little-dinosaurs"
       }
     ]
+  },
+  {
+    id: "love-formula",
+    name: "Love Formula",
+    tagline: "Organiza la cita perfecta… y arruina las de tus rivales.",
+    players: { min: 2, max: 4 },
+    time: { min: 15, max: 30 },
+    age: 12,
+    difficulty: 2,
+    requiresEnglish: true,
+    tags: ["Cartas", "Draft", "Anime"],
+    description:
+      "Un juego de cartas con estilo anime en el que cada jugador apoya a parejas y trata de organizarles la cita perfecta, mientras sabotea las citas de las parejas de sus rivales. Primero eliges con cuidado las cartas que quieres en tu mano y luego las juegas para armar citas increíbles. Romance, estrategia y un poquito de maldad.",
+    howToPlay: [
+      "El juego alterna dos fases: primero la fase de draft y luego la fase de juego.",
+      "En el draft, los jugadores eligen por turnos las cartas que quieren tener en la mano, mientras los demás hacen lo mismo.",
+      "En la fase de juego usas tus cartas para organizar la cita perfecta de tus parejas… o para sabotear las de tus rivales.",
+      "Después de jugar cada fase dos veces termina la partida. Gana quien sume más puntos con las mejores citas."
+    ],
+    images: [
+      {
+        src: "assets/img/games/love-formula/1.jpg",
+        credit: "W Eric Martin / BoardGameGeek",
+        link: "https://boardgamegeek.com/image/3613252/love-formula"
+      },
+      {
+        src: "assets/img/games/love-formula/2.jpg",
+        credit: "MillicanDarque / BoardGameGeek",
+        link: "https://boardgamegeek.com/image/5334926/love-formula"
+      }
+    ]
   }
 ];
